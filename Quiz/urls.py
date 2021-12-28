@@ -3,7 +3,7 @@ from .views import geeks_view,QuizQuestion
 app_name = 'Quiz'
 
 urlpatterns = [
-    path('' , geeks_view ,name='quiz'),
+    path('' , geeks_view ,name='geeksview'),
     path('q/<str:topic>/', QuizQuestion.as_view(), name='questions' ),
 
 
